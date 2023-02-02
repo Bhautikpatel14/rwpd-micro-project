@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyFlight</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <div class="container-fluid">
+            <img src="https://cdn-icons-png.flaticon.com/128/984/984233.png" class="navbar-brand img-fluid" width="50" alt="">
+          <a class="navbar-brand" href="#"><b>BookMyFlight</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="ms-2"></div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#ticket">Book Ticket</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Account
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./signin.html">Sign In</a></li>
+                  <li><a class="dropdown-item" href="./signup.html">Sign Up</a></li>
+                </ul>
+              </li>
+          
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <form>
+
+        <div class="container-fluid p-0 m-0">
+            <img src="./1.png" class="img-fluid w-100" alt="">
+        </div>
+
+        <br><br>
+        <div class="container" id="ticket">
+            <div class="col">
+              <div class="card" style="border-radius: 1rem;">
+                  <div class="col-md- col-lg-12 d-flex align-items-center">
+                    <div class="card-body p-4 p-lg-5 text-black">
+                        <h1>Reserve Your Ticket</h1>
+                       <form class="row g-3 needs-validation" novalidate>
+                           <div class="col-md-6">
+                             <label for="validationCustom01" class="form-label"></label>
+                             <input type="text" class="form-control" id="validationCustom01" placeholder="To" required>
+                             <div class="valid-feedback">
+                               Looks good!
+                             </div>
+                           </div>
+                           <div class="col-md-6">
+                             <label for="validationCustom02" class="form-label"></label>
+                             <input type="text" class="form-control" id="validationCustom02" placeholder="From" required>
+                             <div class="valid-feedback">
+                               Looks good!
+                            </div>
+                           </div>
+                          <div class="col-md-4">
+                              <label for="validationCustom03" class="form-label">Depart</label>
+                              <input type="Date" class="form-control" id="validationCustom03" required>
+                              <div class="invalid-feedback">
+                                    Please enter the Date.
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                                  <label for="validationCustom04" class="form-label">Return</label>
+                                  <input type="Date" class="form-control" id="validationCustom04" required>
+                                  <div class="invalid-feedback">
+                                    Please enter the Date.
+                                  </div>
+                              </div>
+                              <div class="col-md-5">
+                                  <label for="validationCustom01" class="form-label"></label>
+                                  <input type="number" class="form-control" id="validationCustom01" placeholder="Adults" required>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                </div>
+                                <div class="col-md-5">
+                                  <label for="validationCustom01" class="form-label"></label>
+                                  <input type="number" class="form-control" id="validationCustom01" placeholder="Children" required>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                </div>
+            
+                          <div class="col-md-5">
+                            <label for="validationCustom04" class="form-label">Type of flight</label>
+                            <select class="form-select" id="validationCustom04" required>
+                              <option selected disabled value="">Choose...</option>
+                              <option>business class</option>
+                              <option>econmy class</option>
+                              
+                            </select>
+                            <div class="invalid-feedback">
+                               Please select the Bus.
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                              <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+                              </label>
+                              <div class="invalid-feedback">
+                                You must agree before submitting.
+                             </div>
+                           </div>
+                         </div>
+                         <br>
+            
+                         <div class="col">
+                           <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#myModal">Search Flight</button>
+                         </div>
+                       </form>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+    
+    </form>
+    <div class="container p-0">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <img src="https://cdn-icons-png.flaticon.com/128/984/984233.png" class="navbar-brand img-fluid" width="30" alt="">
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">&copy; 2023 BookMyFlight</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+          </ul>
+        </footer>
+      </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
+ 
